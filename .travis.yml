@@ -14,8 +14,8 @@ env:
 before_install:
   #gr- gem install mdl
   # download gradle as a zip file
-  #- wget https://services.gradle.org/distributions/gradle-4.6-bin.zip
- # - unzip -d $HOME gradle-4.6-bin.zip
+  - wget https://services.gradle.org/distributions/gradle-4.6-bin.zip
+  - unzip -d $HOME gradle-4.6-bin.zip
   # delete the downloaded file
   - rm -rf gradle-4.6-bin.zip
   # add gradle bin to path at the beginning to ensure it overwrites old gradle
